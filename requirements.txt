@@ -6,3 +6,4 @@ paddlepaddle
 paddleocr
 numpy<2.0
 setuptools
+lap
