@@ -128,12 +128,20 @@ def process_video(uploaded_file):
 
         img = Image.fromarray(result_rgb)
 
-        frame_placeholder.image(img, use_container_width =True)
+        frame_placeholder.image(img, use_container_width=True)
 
     cap.release()
     cv2.destroyAllWindows()
 
+
 if __name__ == '__main__':
+
+    st.set_page_config(
+        page_title="Speed estimation from Video",
+        page_icon="🤖",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
 
     st.title("Speed estimation from Video")
 
