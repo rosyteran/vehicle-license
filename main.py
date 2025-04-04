@@ -131,7 +131,6 @@ def process_video(uploaded_file):
         frame_placeholder.image(img, use_container_width=True)
 
     cap.release()
-    cv2.destroyAllWindows()
 
 
 if __name__ == '__main__':
